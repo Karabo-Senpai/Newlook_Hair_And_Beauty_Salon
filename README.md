@@ -1,0 +1,2 @@
+# Newlook_Hair_And_Beauty_Salon
+Final year project for our client Newlook that is a hair and beauty salon business for whom we developed an android mobile application using java and firebase to store data the app is aimed at aiding the salons customers book appointments and buy products sold from the salon online via the application the data is stored using a realtime database and cloud database (firestore) 

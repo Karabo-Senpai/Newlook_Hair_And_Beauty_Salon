@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_smoke"
+    android:orientation="vertical"
+    tools:context=".Users.Book_Appointment">
+
+    <!--Adding Booking Components-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/dark_blue">
+
+        <ImageView
+            android:id="@+id/nav_back_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:hapticFeedbackEnabled="true"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideInset"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Book An Appointment"
+          android:textStyle="bold"
+          android:textColor="@color/dark_blue"
+          android:fontFamily="@font/kadwa"
+          android:gravity="center"
+          android:textSize="22sp"/>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="10dp"
+              android:layout_marginTop="20dp">
+              <TextView
+                  android:id="@+id/user_name"
+                  android:layout_width="100dp"
+                  android:layout_height="wrap_content"
+                  android:text="First Name : "
+                  android:textColor="@color/black"
+                  android:fontFamily="@font/kadwa"
+                  android:textSize="14sp"/>
+
+
+              <EditText
+                  android:id="@+id/username_input"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="15dp"
+                  android:fontFamily="@font/kadwa"
+                  android:layout_marginRight="15dp"
+                  android:textColor="@color/black"
+                  android:textSize="14sp"
+                  android:layout_toRightOf="@id/user_name"
+                   />
+          </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/user_lastname"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Last Name : "
+                android:textColor="@color/black"
+                android:fontFamily="@font/kadwa"
+                android:textSize="14sp"/>
+
+
+            <EditText
+                android:id="@+id/user_lastname_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/kadwa"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/user_lastname"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/user_contact"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Contact : "
+                android:textColor="@color/black"
+                android:fontFamily="@font/kadwa"
+                android:textSize="14sp"/>
+
+
+            <EditText
+                android:id="@+id/user_contact_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/kadwa"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/user_contact"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/user_service_type"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Service Type : "
+                android:textColor="@color/black"
+                android:fontFamily="@font/kadwa"
+                android:textSize="14sp"/>
+
+
+            <EditText
+                android:id="@+id/user_service_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/kadwa"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/user_service_type"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/user_date"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Booking Date : "
+                android:textColor="@color/black"
+                android:fontFamily="@font/kadwa"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/user_date_input"
+                android:layout_width="match_parent"
+                android:focusable="false"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/kadwa"
+                android:layout_marginRight="15dp"
+                android:inputType="date"
+                android:datePickerMode="calendar"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/user_date"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/confirmation_method"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Confirmation"
+                android:textColor="@color/black"
+                android:fontFamily="@font/kadwa"
+                android:textSize="14sp"/>
+
+
+            <RadioGroup
+                android:id="@+id/confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/radio_email"
+
+                android:orientation="horizontal"
+                android:layout_toRightOf="@id/confirmation_method">
+
+                <RadioButton
+                    android:id="@+id/radio_email"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="E-Mail"
+                    android:fontFamily="@font/kadwa"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/radio_sms"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="SMS"
+                    android:fontFamily="@font/kadwa"
+                    android:textSize="14sp"/>
+
+
+            </RadioGroup>
+
+
+<!--
+            <EditText
+                android:id="@+id/user_method_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/kadwa"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/confirmation_method"
+                android:background="@color/transparent" />   -->
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/user_extra_message"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:text="Any Other Extra Information Regarding Your Booking : "
+                android:textColor="@color/black"
+                android:fontFamily="@font/kadwa"
+                android:textSize="14sp"/>
+
+
+            <EditText
+                android:id="@+id/user_message_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/kadwa"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/user_extra_message"
+                 />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/book_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:fontFamily="@font/kadwa"
+            app:cornerRadius="35dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

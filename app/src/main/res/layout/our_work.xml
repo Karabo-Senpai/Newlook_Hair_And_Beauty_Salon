@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_smoke"
+    android:elevation="10dp"
+    app:cardCornerRadius="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/work_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/whatsapp_image_2022_10_16_at_14_17_52" />
+
+        <TextView
+            android:id="@+id/work_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/work_image"
+            android:fontFamily="@font/kadwa"
+            android:padding="10dp"
+            android:text="Low Taper Fade And Black Hair Coloring"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/work_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/work_name"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/work_image"
+            android:text="R 120.00"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white_smoke"
+    tools:context=".Users.ProductDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/nav_back_icon"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:hapticFeedbackEnabled="true"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/kadwa"
+            android:gravity="center"
+            android:text="@string/productdetails"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/dark_blue"
+        android:scrollbarStyle="outsideInset">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <ImageView
+            android:id="@+id/prodct_img"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            />
+
+
+            <TextView
+                android:id="@+id/prodct_name"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textSize="16sp"
+                android:layout_below="@id/prodct_img"
+                android:textColor="@color/dark_blue"
+                android:fontFamily="@font/kadwa"/>
+
+
+            <TextView
+                android:id="@+id/prodct_price"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Price"
+                android:textSize="14sp"
+                android:gravity="right"
+                android:layout_below="@id/prodct_img"
+                android:textColor="@color/black"
+                android:fontFamily="@font/kadwa"/>
+
+            <TextView
+                android:id="@+id/prodct_desc"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="14sp"
+                 android:gravity="center"
+                android:layout_below="@id/prodct_name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/kadwa"/>
+
+     </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/add_items"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_add_circle_24" />
+
+
+                <TextView
+                    android:id="@+id/item_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/add_items"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="58dp"
+                    android:layout_marginLeft="78dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="-318dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_toEndOf="@+id/add_items"
+                    android:layout_toRightOf="@id/add_items"
+                    android:fontFamily="@font/kadwa"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/remove_item"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_toRightOf="@id/item_quantity"
+                    android:src="@drawable/ic_baseline_remove_circle_24" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/add_cart_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:text="Add To Cart"
+            android:fontFamily="@font/kadwa"
+            android:textSize="14sp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

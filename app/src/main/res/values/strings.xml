@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Newlook Beauty Salon</string>
+
+    <string name="dev_company_name">Tech Muse &#8482;</string>
+    <string name="home">Home</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="products">Products</string>
+    <string name="profile">Profile Settings</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="book_now">Book Now</string>
+    <string name="appointments">Appointments</string>
+    <string name="contact">Contact Us</string>
+    <string name="testimonials">Testimonials</string>
+    <string name="our_services">Our Services</string>
+    <string name="service_desc">Have A Look At Some Of The Services We Offer</string>
+    <string name="view_all">View All</string>
+    <string name="search_here">Search Here</string>
+    <string name="our_work">Some Of Our Work</string>
+    <string name="hair_care">Hair Care</string>
+    <string name="hair_care_desc">Haircuts &amp; Styling :\n Men Women And Children</string>
+    <string name="hair_care_desc2">Conditioning \n Straightening \n Color &amp; Highlights</string>
+    <string name="cart">Cart</string>
+    <string name="view_appointments">View Appointments</string>
+    <string name="manage_products">Manage Products</string>
+    <string name="manage_services">Manage Services</string>
+    <string name="admin_notifactions">Notifications</string>
+    <string name="admin_notifications">Notifications</string>
+    <string name="add_service">Add Service</string>
+    <string name="add_product">Add Products</string>
+    <string name="services">Services</string>
+    <string name="view_all_products">View All Products</string>
+    <string name="my_cart">My Cart</string>
+    <string name="productdetails">Product Details</string>
+
+
+    <!--Navigation Menu Style -->
+    <style name="navigation_theme">
+
+
+        <!--Navigation Menu Text Color When Selected -->
+        <item name="colorPrimary">@color/dark_blue</item>
+        <!--Navigation Menu Background Color When Selected -->
+        <item name="colorControlHighlight">@color/black</item>
+
+
+    </style>
+
+</resources>
